@@ -19,10 +19,6 @@ async def hello(ctx):
 async def heh(ctx, count_heh = 5):
     await ctx.send("he" * count_heh)
 
-@bot.command()
-async def add(ctx, left: int, right: int):
-    """Adds two numbers together."""
-    await ctx.send(left + right)
 
 @bot.command(description='For when you wanna settle the score some other way')
 async def choose(ctx, *choices: str):
